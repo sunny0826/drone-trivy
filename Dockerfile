@@ -3,7 +3,7 @@ FROM alpine:latest
 LABEL maintainer="sunnydog0826@gmail.com"
 
 RUN apk update && \
-  apk add \
+  apk add git \
     ca-certificates && \
   rm -rf /var/cache/apk/*
 
