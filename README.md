@@ -7,6 +7,10 @@
 使用方法：
 
 ```yaml
+kind: pipeline
+name: {your-pipeline-name}
+
+steps:
 - name: 镜像安全扫描
   image: guoxudongdocker/drone-trivy    # 使用 trivy 进行镜像安全扫描，详见：https://github.com/knqyf263/trivy
   volumes:
